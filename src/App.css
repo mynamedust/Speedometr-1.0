@@ -1,38 +1,550 @@
 .App {
   text-align: center;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.linecircle2 {
+  width: 50%;
+  height: 10%;
+  background: black;
+  border: 0.156vw solid red;
+  box-shadow: 0vw 0vw 0.469vw rgb(219, 38, 38), inset 0vw 0vw 0.234vw rgb(219, 38, 38);
+  border-radius: 50%;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  top: 41.5%;
+  z-index: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.engineicon {
+  width: 1.563vw;
+  stroke: green;
 }
+
+
+
+.points {
+  width: 0.156vw;
+  height: 1.875vw;
+  background: white;
+  position: absolute;
+  transform: rotate(calc(var(--i)*6deg)) translateY(-5.208vw);
+  border-radius: 0.234vw;
+
+}
+
+.points2 {
+  width: 0.078vw;
+  height: 0.677vw;
+  background: white;
+  position: absolute;
+  transform: rotate(calc(var(--i)*6deg)) translateY(2.604vw);
+  border-radius: 0.117vw;
+
+}
+
 
 .App-header {
-  background-color: #282c34;
+  background: url('./back.jpg');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: calc(0.521vw + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.light {
+  position: absolute;
+  width: 2.083vw;
+  bottom: 5.208vw;
+  right: 19.271vw;
+  fill: grey;
 }
 
-@keyframes App-logo-spin {
+
+.cruise {
+  position: absolute;
+  width: 2.083vw;
+  height: 2.083vw;
+  right: 21.354vw;
+  bottom: 10.417vw;
+  fill: grey;
+}
+
+.door {
+  position: absolute;
+  width: 2.292vw;
+  height: 2.292vw;
+  right: 20.313vw;
+  bottom: 15.625vw;
+  fill: grey;
+}
+
+.belt {
+  position: absolute;
+  width: 1.927vw;
+  height: 1.927vw;
+  right: 17.188vw;
+  bottom: 19.792vw;
+  fill: grey;
+}
+
+
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.rainbow {
+  cursor: pointer;
+  position: absolute;
+  left: 1.3vw;
+  top: 18.5vw;
+  z-index: 0;
+  width: 21.354vw;
+  height: 5.208vw;
+  border-radius: 0.521vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rainbow::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  bottom: -160%;
+  width: 200%;
+  height: 420%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(rgb(170, 34, 150), rgb(169, 13, 201)), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7)), linear-gradient(rgb(170, 34, 150), rgb(169, 13, 201)), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+
+}
+
+.rainbow::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0.313vw;
+  top: 0.313vw;
+  width: calc(100% - 0.625vw);
+  height: calc(100% - 0.625vw);
+  background: white;
+  border-radius: 0.26vw;
+  background: linear-gradient(to left, rgb(226, 177, 226), violet);
+}
+
+.rain {
+  position: relative;
+  /* width: 97.2%; */
+  margin-left: 1.5%;
+  height: 88%;
+  background: linear-gradient(to left, rgb(221, 7, 221), rgb(156, 85, 156));
+  border-radius: 0.234vw;
+  transition: all ease-in-out 0.1s;
+}
+
+.gasText {
+  position: absolute;
+  z-index: 2;
+  font-size: 3.021vw;
+  width: 28%;
+  overflow: hidden;
+  margin-left: 37%;
+  color: wheats;
+  user-select: none
+}
+
+
+input[type="text"] {
+  background-color: transparent;
+  margin-top: 1.563vw;
+  border: 0;
+  border-bottom: solid 0.052vw #8080ff;
+  text-align: center;
+  font-size: 1.042vw;
+  color: #518bf0;
+  text-shadow: 0 0 0.156vw #518bf0;
+  width: 2.344vw;
+  display: inline-block;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: dashed 0.052vw #ff8080;
+}
+
+input::-moz-selection {
+  color: #1a1a1a;
+  background-color: #c6e4ee;
+}
+
+input::selection {
+  color: #1a1a1a;
+  background-color: #c6e4ee;
+}
+
+::-webkit-input-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 0.156vw #7aa6f3;
+}
+
+:-moz-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 0.156vw #7aa6f3;
+}
+
+::-moz-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 0.156vw #7aa6f3;
+}
+
+:-ms-input-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 0.156vw #7aa6f3;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -o-box-align: center;
+  align-items: center;
+  -o-box-pack: center;
+  justify-content: center;
+  -o-box-orient: vertical;
+  flex-direction: column;
+  height: fit-content;
+  position: absolute;
+  left: 1.3vw;
+  top: 25.5vw;
+}
+
+
+
+.green .progress,
+.red .progress,
+.orange .progress {
+  position: relative;
+  border-radius: 15%;
+}
+
+.green .progress,
+.red .progress,
+.orange .progress {
+  width: 5.208vw;
+  height: 10.417vw;
+}
+
+.green .progress {
+  border: 0.26vw solid #53fc53;
+}
+
+.green .progress {
+  box-shadow: 0 0 1.042vw #029502;
+}
+
+.green .progress,
+.red .progress,
+.orange .progress {
+  transition: all 1s ease;
+}
+
+.green .progress .inner,
+.red .progress .inner,
+.orange .progress .inner {
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 12%;
+}
+
+.green .progress .inner,
+.red .progress .inner,
+.orange .progress .inner {
+  width: 4.688vw;
+  height: 9.896vw;
+}
+
+.green .progress .inner,
+.red .progress .inner,
+.orange .progress .inner {
+  border: 0.26vw solid #1a1a1a;
+}
+
+.green .progress .inner,
+.red .progress .inner,
+.orange .progress .inner {
+  transition: all 1s ease;
+}
+
+.green .progress .inner .water,
+.red .progress .inner .water,
+.orange .progress .inner .water {
+  position: absolute;
+  z-index: 1;
+  width: 225%;
+  height: 110%;
+  left: -50%;
+  border-radius: 40%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: spin;
+  animation-name: spin;
+}
+
+.green .progress .inner .water {
+  top: 25%;
+}
+
+.green .progress .inner .water {
+  background: rgba(83, 252, 83, 0.5);
+}
+
+.green .progress .inner .water,
+.red .progress .inner .water,
+.orange .progress .inner .water {
+  transition: all 1s ease;
+}
+
+.green .progress .inner .water,
+.red .progress .inner .water,
+.orange .progress .inner .water {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+
+.green .progress .inner .water {
+  box-shadow: 0 0 1.042vw #03bc03;
+}
+
+.green .progress .inner .glare,
+.red .progress .inner .glare,
+.orange .progress .inner .glare {
+  position: absolute;
+  top: -120%;
+  left: -120%;
+  z-index: 5;
+  width: 200%;
+  height: 200%;
+  transform: rotate(45deg);
+  border-radius: 50%;
+}
+
+.green .progress .inner .glare,
+.red .progress .inner .glare,
+.orange .progress .inner .glare {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.green .progress .inner .glare,
+.red .progress .inner .glare,
+.orange .progress .inner .glare {
+  transition: all 1s ease;
+}
+
+.green .progress .inner .percent,
+.red .progress .inner .percent,
+.orange .progress .inner .percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.green .progress .inner .percent,
+.red .progress .inner .percent,
+.orange .progress .inner .percent {
+  line-height: 12.5vw;
+  font-size: 4.808vw;
+}
+
+.green .progress .inner .percent {
+  color: #03c603;
+}
+
+.green .progress .inner .percent {
+  text-shadow: 0 0 0.521vw #029502;
+}
+
+.green .progress .inner .percent,
+.red .progress .inner .percent,
+.orange .progress .inner .percent {
+  transition: all 1s ease;
+}
+
+.red {
+  margin-top: 0.781vw;
+}
+
+.red .progress {
+  border: 0.26vw solid #ed3b3b;
+}
+
+.red .progress {
+  box-shadow: 0 0 1.042vw #7a0b0b;
+}
+
+.red .progress .inner .water {
+  top: 75%;
+}
+
+.red .progress .inner .water {
+  background: rgba(237, 59, 59, 0.5);
+}
+
+.red .progress .inner .water {
+  box-shadow: 0 0 1.042vw #9b0e0e;
+}
+
+.red .progress .inner .percent {
+  color: #a30f0f;
+}
+
+.red .progress .inner .percent {
+  text-shadow: 0 0 0.521vw #7a0b0b;
+}
+
+.orange {
+  margin-top: 0.781vw;
+}
+
+.orange .progress {
+  border: 0.26vw solid #f07c3e;
+}
+
+.orange .progress {
+  box-shadow: 0 0 1.042vw #7e320a;
+}
+
+.orange .progress .inner .water {
+  top: 50%;
+}
+
+.orange .progress .inner .water {
+  background: rgba(240, 124, 62, 0.5);
+}
+
+.orange .progress .inner .water {
+  box-shadow: 0 0 1.042vw #a0400c;
+}
+
+.orange .progress .inner .percent {
+  color: #a8430d;
+}
+
+.orange .progress .inner .percent {
+  text-shadow: 0 0 0.521vw #7e320a;
+}
+
+#copyright {
+  margin-top: 1.302vw;
+  background-color: transparent;
+  font-size: 0.729vw;
+  color: #b3b3b3;
+  text-align: center;
+}
+
+#copyright div {
+  margin-bottom: 0.521vw;
+}
+
+#copyright a,
+#copyright a:link {
+  color: #808080;
+  text-decoration: none;
+  border-bottom: 0.052vw solid #808080;
+  padding-bottom: 0.104vw;
+}
+
+#copyright a:active {
+  color: #b3b3b3;
+}
+
+#copyright a:hover {
+  color: #b3b3b3;
+  border-bottom: 0.052vw solid #b3b3b3;
+  padding-bottom: 0.208vw;
+}
+
+.instructions {
+  display: inline-block;
+  margin: 0.26vw 0;
+  font-size: 0.833vw;
+}
+
+@-webkit-keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sliderWrapper {
+  height: 10.417vw;
+  width: auto;
+  position: absolute;
+  left: 10vw;
+  top: 25.8vw;
+}
+
+#single-thumb {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
+#single-thumb .range-slider__range {
+  border-radius: 0.313vw;
+  background: rgba(9, 224, 9, 0.8);
+}
+
+#single-thumb .range-slider__thumb[data-upper] {
+  height: 0vw;
+}
+
+#single-thumb .range-slider__thumb[data-lower] {
+  background: rgba(9, 224, 9, 1);
+  height: 0.885vw;
+  width: 0.885vw;
+  margin: 0vw;
 }

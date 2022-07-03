@@ -1,0 +1,18 @@
+.hp {
+    position: absolute;
+    height: 21.625vw;
+    width: 21.625vw;
+    bottom: 1.813vw;
+    right: 1.563vw;
+    transform: rotate(115deg)
+}
+
+
+
+.engine {
+    height: 2.083vw;
+    width: 2.083vw;
+    position: absolute;
+    right: 2.781vw;
+    bottom: 5.208vw;
+}

@@ -1,0 +1,9 @@
+.gas {
+    width: 2.604vw;
+    height: 7.813vw;
+    background-color: green;
+    position: absolute;
+    right: 25%;
+    bottom: 29%;
+    z-index: 20;
+}

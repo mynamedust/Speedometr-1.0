@@ -1,0 +1,11 @@
+.switch {
+    width: 23.438vw;
+    padding: 0vw 1.042vw;
+    display: grid;
+    background: none;
+    position: absolute;
+    left: 0.042vw;
+    top: 1.438vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+}

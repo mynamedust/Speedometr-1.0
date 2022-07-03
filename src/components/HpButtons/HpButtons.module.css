@@ -1,0 +1,143 @@
+.hpbuttons {
+    position: absolute;
+    width: 10.417vw;
+    height: 10.938vw;
+    left: 12vw;
+    top: 25.5vw;
+    padding: 0px;
+    border: none;
+    background: none;
+}
+
+.damage {
+    cursor: pointer;
+    position: relative;
+    background: #f75858;
+    width: 10.417vw;
+    height: 5.469vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+
+.bat {
+    position: absolute;
+    left: 0.521vw;
+    top: 0.313vw;
+    width: 2.604vw;
+    height: 2.604vw;
+}
+
+.car {
+    margin-left: 1.042vw;
+    width: 7.292vw;
+    height: 3.646vw;
+}
+
+.batOn {
+    top: 1vw;
+    left: 0.35vw;
+    transform: rotate(42deg)
+}
+
+.heal {
+    margin-top: 0.5vw;
+    background: #69e469;
+}
+
+.heal .car {
+    margin-top: 1.042vw;
+    width: 7.292vw;
+    height: 3.646vw;
+}
+
+.repair {
+    position: absolute;
+    left: 0.3vw;
+    bottom: 2.604vw;
+
+}
+
+.wrench {
+    position: relative;
+    width: 40px;
+    right: 3px;
+    bottom: 5px;
+    transition: 0.5s ease-in all;
+}
+
+.wrenchwrap {
+    position: relative;
+    top: 20px;
+    left: 4px;
+    width: 28px;
+    transition: 0.2s ease-in all;
+    overflow: visible;
+    height: 28px;
+}
+
+
+.gear {
+    width: 20px;
+    position: relative;
+    left: 25px;
+    bottom: 13px;
+    transition: 0.2s ease-in all;
+}
+
+
+.wrenchwrapOn {
+    transform: rotate(180deg);
+}
+
+.gearOn {
+    transform: rotate(-180deg);
+}
+
+
+
+.hit {
+    opacity: 0;
+    transition: 0.1s ease all;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 38px;
+    top: 28px;
+    transform: rotate(-30deg)
+}
+
+.hitOn {
+    opacity: 1;
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: 20px;
+    top: 8px;
+    transform: rotate(-30deg)
+}
+
+.hit2 {
+    opacity: 0;
+    transition: 0.1s ease all;
+    position: absolute;
+    transform: rotate(10deg);
+    left: 40px;
+    top: 28px;
+
+    width: 10px;
+    height: 10px;
+
+}
+
+.hitOn2 {
+    left: 27px;
+    top: 5px;
+    opacity: 1;
+    width: 40px;
+    height: 35px;
+}

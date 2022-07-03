@@ -1,0 +1,207 @@
+.gas {
+    width: 2.604vw;
+    height: 7.813vw;
+    background-color: green;
+    position: absolute;
+    right: 40%;
+    bottom: 30%;
+    z-index: 20;
+}
+
+.wrapper {
+    background: rgb(17, 17, 17);
+    border-radius: 50%;
+    height: 15.625vw;
+    width: 15.625vw;
+    border: solid 0.234vw rgba(255, 0, 0, 0.8);
+    border-bottom: solid 0.313vw rgb(17, 17, 17);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset 0vw 0.469vw 0.469vw rgba(255, 0, 0, 0.7),
+        0vw -0.156vw 0.234vw rgba(255, 0, 0, 0.7),
+        0.234vw -0.313vw 0.781vw rgba(255, 0, 0, 0.7),
+        -0.234vw -0.313vw 0.781vw rgba(255, 0, 0, 0.7),
+        0vw 0.391vw 0.234vw rgb(17, 17, 17);
+    margin-bottom: 4.167vw;
+    margin-right: 4.167vw;
+    z-index: 2;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    position: absolute;
+    color: white;
+    font-weight: 100;
+    font-size: 1.016vw;
+}
+
+.zero {
+    left: 1.953vw;
+    bottom: 3.906vw;
+}
+
+.one {
+    left: 0.625vw;
+    top: 7.109vw;
+}
+
+.two {
+    left: 1.458vw;
+    top: 3.828vw;
+}
+
+.three {
+    left: 3.906vw;
+    top: 1.25vw;
+}
+
+.four {
+    top: 0.521vw;
+}
+
+.five {
+    right: 3.906vw;
+    top: 1.25vw;
+}
+
+.six {
+    right: 0.885vw;
+    top: 3.828vw;
+}
+
+.seven {
+    right: 0.104vw;
+    top: 7.109vw;
+}
+
+.eight {
+    right: 0.885vw;
+    bottom: 3.906vw;
+}
+
+.linebox {
+    height: 100%;
+    width: 20%;
+    transition: all ease-in;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5%;
+    transition: all ease-in-out 0.1s;
+}
+
+.line {
+    width: 0.156vw;
+    height: 57%;
+    bottom: 7.813vw;
+    background-color: white;
+    border-radius: 20%;
+    border: solid 0.039vw rgb(219, 38, 38);
+    box-shadow: 0vw 0vw 0.938vw rgb(219, 38, 38);
+
+}
+
+.linecircle {
+    width: 70%;
+    height: 13%;
+    background: black;
+    border: 0.156vw solid red;
+    box-shadow: 0vw 0vw 0.469vw rgb(219, 38, 38), inset 0vw 0vw 0.234vw rgb(219, 38, 38);
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    top: 41.5%;
+    z-index: 0;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: rotate(240deg);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0vw;
+    height: 7.813vw;
+    width: 7.813vw;
+    margin-right: 0.104vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.625vw;
+}
+
+.gasicon {
+    position: absolute;
+    bottom: 1.823vw;
+    width: 0.938vw;
+    left: 3.542vw;
+}
+
+.linebox2 {
+    height: 100%;
+    width: 20%;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 22%;
+    transform: rotate(240deg);
+    transition: all 1s ease;
+}
+
+.line2 {
+    width: 0.156vw;
+    height: 35%;
+    bottom: 7.813vw;
+    background-color: white;
+    border-radius: 30%;
+    border: solid 0.039vw rgb(219, 38, 38);
+    box-shadow: 0vw 0vw 0.521vw rgb(219, 38, 38);
+
+}
+
+.empty {
+    position: absolute;
+    left: 1.042vw;
+    bottom: 1.563vw;
+}
+
+.half {
+    position: absolute;
+    bottom: 0.208vw;
+}
+
+.full {
+    position: absolute;
+    right: 1.042vw;
+    bottom: 1.563vw;
+}
+
+
+.oilCircle {
+    position: absolute;
+    border-radius: 50%;
+    height: 7.813vw;
+    width: 7.813vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-59.7deg);
+}

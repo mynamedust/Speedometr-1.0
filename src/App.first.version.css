@@ -1,0 +1,183 @@
+@media (prefers-reduced-motion: no-preference) {
+  .linebox {
+    animation: Linebox-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes Linebox-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.linebox {
+  height: 100%;
+  width: 20%;
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5%;
+}
+
+.line {
+  width: 3px;
+  height: 57%;
+  bottom: 150px;
+  background-color: white;
+  border-radius: 20%;
+  border: solid 0.75px rgb(219, 38, 38);
+  box-shadow: 0px 0px 18px rgb(219, 38, 38);
+
+}
+
+.linecircle {
+  width: 70%;
+  height: 13%;
+  background: black;
+  border: 3px solid red;
+  box-shadow: 0px 0px 9px rgb(219, 38, 38), inset 0px 0px 4.5px rgb(219, 38, 38);
+  border-radius: 50%;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  top: 41.5%;
+  z-index: 0;
+}
+
+.number {
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  font-size: 19.5px;
+}
+
+.zero {
+  left: 37.5px;
+  bottom: 75px;
+}
+
+.one {
+  left: 19.5px;
+  top: 136.5px;
+}
+
+.two {
+  left: 36px;
+  top: 73.5px;
+}
+
+.three {
+  left: 75px;
+  top: 31.5px;
+}
+
+.four {
+  top: 13.5px;
+}
+
+.five {
+  right: 75px;
+  top: 31.5px;
+}
+
+.six {
+  right: 36px;
+  top: 73.5px;
+}
+
+.seven {
+  right: 19.5px;
+  top: 136.5px;
+}
+
+.eight {
+  right: 37.5px;
+  bottom: 75px;
+}
+
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: rotate(240deg);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.wrapper {
+  background: rgb(17, 17, 17);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  border: solid 4.5px rgba(255, 0, 0, 0.8);
+  border-bottom: solid 6px rgb(17, 17, 17);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: inset 0px 9px 9px rgba(255, 0, 0, 0.7),
+    0px -3px 4.5px rgba(255, 0, 0, 0.7),
+    4.5px -6px 15px rgba(255, 0, 0, 0.7),
+    -4.5px -6px 15px rgba(255, 0, 0, 0.7),
+    0px 7.5px 4.5px rgb(17, 17, 17);
+  margin-bottom: 80px;
+  margin-right: 80px;
+}
+
+.points {
+  width: 3px;
+  height: 36px;
+  background: white;
+  position: absolute;
+  transform: rotate(calc(var(--i)*6deg)) translateY(-100px);
+  border-radius: 4.5px;
+
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+@keyframes linebox {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
